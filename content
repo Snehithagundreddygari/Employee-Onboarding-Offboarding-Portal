@@ -1,0 +1,7 @@
+{
+  "email": "{{email}}",
+  "displayName": "{{displayName}}",
+  "jobTitle": "{{jobTitle}}",
+  "managerEmail": "{{managerEmail}}",
+  "startDate": "{{startDate}}"
+}
