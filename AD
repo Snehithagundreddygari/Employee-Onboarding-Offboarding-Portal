@@ -1,0 +1,10 @@
+param(
+  [string]$DisplayName,
+  [string]$UserPrincipalName,
+  [string]$GivenName,
+  [string]$Surname,
+  [string]$OU = "OU=Employees,DC=contoso,DC=com"
+)
+
+$password = ConvertTo-SecureString -String "TempP@ssw0rd!" -AsPlainText -Force
+New-ADUser -Name $DisplayName -GivenName $GivenName -Surname $Surname -Path $OU -AccountPassword $password -Enabled $true -UserPrincipalName $UserPrincipalName
